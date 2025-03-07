@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bal Bharti School Assistant Bot</title>
+  <style>
+    /* Basic styling for the page */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    /* Centered and bold title */
+    h1 {
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+      color: #007acc;
+    }
+
+    /* Chatbot container styling */
+    .chat-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Heading -->
+  <h1>Bal Bharti School Assistant Bot</h1>
+  
+  <!-- Chatbot script -->
+  <div class="chat-container">
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '672eff20dd74c835a275a69e' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production'
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
+          v.type = "text/javascript"; 
+          s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
+  </div>
+  
+</body>
+</html>
